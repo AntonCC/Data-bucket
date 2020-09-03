@@ -1,0 +1,43 @@
+.navbar {
+  box-shadow: 0 3px 10px -6px #999;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 50px;
+    .logo {
+      z-index: 10;
+      font-weight: 400;
+      .fade {
+        opacity: .4;
+      }
+    }
+    .nav-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: 5;
+      li {
+        padding: .5rem;
+        a {
+          text-decoration: none;
+          color: #3c3c48;
+        }
+      }
+    }
+    .cta-group {
+      display: flex;
+      z-index: 10;
+      .button {
+        &:first-child {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}
