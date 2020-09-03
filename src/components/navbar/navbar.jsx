@@ -2,6 +2,7 @@ import React from 'react'
 import './navbar.scss'
 import { Link } from 'react-router-dom'
 import Button from '../button/button'
+import { ReactComponent as Hamburger} from '../../img/icons/bars-solid.svg'
 
 const Navbar = () => {
   return (
@@ -20,6 +21,9 @@ const Navbar = () => {
         <div className="cta-group">
           <Button buttonStyle="btn-outline">Login</Button>
           <Button buttonStyle="btn-primary">Sign Up</Button>
+        </div>
+        <div className="mobile-hamburger">
+          <Hamburger />
         </div>
       </div>
     </div>

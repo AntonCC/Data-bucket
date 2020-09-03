@@ -39,6 +39,7 @@
 
 @media only screen and (max-width: 900px) {
   .hero {
+    min-height: calc(100vh - 80px);
     .container {
       grid-template-columns: 1fr;
       .side-b {

@@ -39,5 +39,30 @@
         }
       }
     }
+    .mobile-hamburger {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .navbar {
+    .container {
+      align-items: center;
+      .nav-list {
+        display: none;
+      } 
+      .cta-group {
+        display: none;
+      }
+      .mobile-hamburger {
+        display: block;
+        padding-top: 8px;
+        svg {
+          height: 20px;
+          width: 25px;
+        }
+      }
+    }
   }
 }

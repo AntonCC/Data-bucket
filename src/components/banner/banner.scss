@@ -1,10 +1,55 @@
 .banner {
-  height: 300px;
   max-width: 1000px;
-  background: lightgray;
   margin: 4rem auto;
+  border-radius: 10px;
   .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    box-shadow: #1c1c2b20 0px 0.75rem 2.25rem 0.5rem;
+    border-radius: 10px;
+    &.banner-switch {
+      .side-a {
+        order: 2;
+      }
+      .side-b {
+        order: 1;
+      }
+    }
+    .side-a {
+      height: 100%;
+      img {
+        display: block;
+        width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    }
+    .side-b {
+      padding: 2rem;
+      h2 {
+        margin-bottom: 1rem;
+      }
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 845px) {
+  .banner {
+    .container {
+      grid-template-columns: 1fr;
+      &.banner-switch {
+        .side-a {
+          order: 1;
+        }
+        .side-b {
+          order: 2;
+        }
+      }
+    }
   }
 }
