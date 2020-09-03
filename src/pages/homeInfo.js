@@ -22,3 +22,12 @@ export const cardInfo = [
     icon: <Cog />
   },
 ]
+
+export const bannerInfo = [
+  {
+    title: 'Compress files for use anywhere online.',
+    body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim asperiores commodi explicabo eaque quae. Earum placeat debitis perferendis, illum, quo delectus odit magnam, temporibus adipisci esse quis? Veritatis earum aspernatur perspiciatis, placeat veniam tempore dolores.',
+    buttonStyle: 'btn-gradient',
+    buttonText: 'Try Now'
+  }
+]

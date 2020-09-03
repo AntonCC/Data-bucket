@@ -1,0 +1,10 @@
+.banner {
+  height: 300px;
+  max-width: 1000px;
+  background: lightgray;
+  margin: 4rem auto;
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
