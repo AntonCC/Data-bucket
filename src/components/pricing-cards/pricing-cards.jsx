@@ -2,13 +2,15 @@ import React from 'react'
 import './pricing-cards.scss'
 import PricingCard from '../pricing-card/pricing-card'
 
-const PricingCards = () => {
+const PricingCards = ({ pricingInfo }) => {
   return (
     <div className="pricing-cards">
       <div className="container">
-        <PricingCard />
-        <PricingCard />
-        <PricingCard />
+        {
+          pricingInfo.map(info => (
+            <PricingCard {...info}/>
+          ))
+        }
       </div>
     </div>
   )
