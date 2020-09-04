@@ -1,13 +1,13 @@
 import React from 'react'
 import './card.scss'
 
-const Card = ({ title, subtitle, body, icon }) => {
+const Card = ({ title, subtitle, body, icon, accentColor }) => {
   return (
     <div className="card">
-      <div className="icon">
+      <div className={`icon ${accentColor}`}>
         { icon }
       </div>
-      <h3>{ title }</h3>
+      <h3 className={`${accentColor}`}>{ title }</h3>
       <h5>{ subtitle }</h5>
       <p>{ body }</p>
     </div>

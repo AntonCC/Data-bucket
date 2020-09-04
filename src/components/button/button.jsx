@@ -1,7 +1,7 @@
 import React from 'react'
 import './button.scss'
 
-const STYLES = ['btn-primary', 'btn-outline', 'btn-gradient']
+const STYLES = ['btn-primary', 'btn-outline', 'btn-gradient', 'btn-gradient-purple']
 
 const Button = ({ children, buttonStyle }) => {
   const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0]

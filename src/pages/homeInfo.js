@@ -1,28 +1,60 @@
 import React from 'react'
 
 import {ReactComponent as Cog } from '../img/icons/cog-solid.svg'
+import {ReactComponent as Server } from '../img/icons/server-solid.svg'
+import {ReactComponent as Window } from '../img/icons/window-restore-solid.svg'
+import {ReactComponent as Check } from '../img/icons/check-solid.svg'
+import {ReactComponent as Database } from '../img/icons/database-solid.svg'
+import {ReactComponent as Privacy } from '../img/icons/user-shield-solid.svg'
 import SmileMac from '../img/smile-mac.jpg'
 import MacFile from '../img/mac-file.jpg'
 import Ipad from '../img/ipad.jpg'
+import Dev from '../img/ipad.jpg'
 
 export const cardInfo = [
   {
     title: 'Compress any file easily!',
     subtitle: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
     body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quis tempora! Molestiae dignissimos sed numquam praesentium. Quae nam earum esse omnis. Iste eveniet numquam incidunt aliquid! A aperiam ad atque.',
-    icon: <Cog />
+    icon: <Cog />,
+    accentColor: 'blue'
   },
   {
     title: 'Get 25GB of free storage.',
     subtitle: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
     body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quis tempora! Molestiae dignissimos sed numquam praesentium. Quae nam earum esse omnis. Iste eveniet numquam incidunt aliquid! A aperiam ad atque.',
-    icon: <Cog />
+    icon: <Server />,
+    accentColor: 'green'
   },
   {
-    title: 'Browser Compatibility',
+    title: 'Browser compatibility',
     subtitle: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
     body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quis tempora! Molestiae dignissimos sed numquam praesentium. Quae nam earum esse omnis. Iste eveniet numquam incidunt aliquid! A aperiam ad atque.',
-    icon: <Cog />
+    icon: <Window />,
+    accentColor: 'violet'
+  },
+]
+export const cardInfo2 = [
+  {
+    title: 'Retain high quality',
+    subtitle: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
+    body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quis tempora! Molestiae dignissimos sed numquam praesentium. Quae nam earum esse omnis. Iste eveniet numquam incidunt aliquid! A aperiam ad atque.',
+    icon: <Check />,
+    accentColor: 'blue'
+  },
+  {
+    title: 'Central location for your files',
+    subtitle: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
+    body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quis tempora! Molestiae dignissimos sed numquam praesentium. Quae nam earum esse omnis. Iste eveniet numquam incidunt aliquid! A aperiam ad atque.',
+    icon: <Database />,
+    accentColor: 'green'
+  },
+  {
+    title: 'Highest privacy standards',
+    subtitle: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
+    body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quis tempora! Molestiae dignissimos sed numquam praesentium. Quae nam earum esse omnis. Iste eveniet numquam incidunt aliquid! A aperiam ad atque.',
+    icon: <Privacy />,
+    accentColor: 'violet'
   },
 ]
 
@@ -37,7 +69,7 @@ export const bannerInfo = [
   {
     title: 'Maintain excellent quality when compressed.',
     body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim asperiores commodi explicabo eaque quae. Earum placeat debitis perferendis, illum, quo delectus odit magnam, temporibus adipisci esse quis? Veritatis earum aspernatur perspiciatis, placeat veniam tempore dolores.',
-    buttonStyle: 'btn-gradient',
+    buttonStyle: 'btn-gradient-purple',
     buttonText: 'Try Now',
     image: MacFile,
     switchSide: true
@@ -52,9 +84,9 @@ export const bannerInfo = [
   {
     title: 'Share file with anyone, anywhere',
     body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim asperiores commodi explicabo eaque quae. Earum placeat debitis perferendis, illum, quo delectus odit magnam, temporibus adipisci esse quis? Veritatis earum aspernatur perspiciatis, placeat veniam tempore dolores.',
-    buttonStyle: 'btn-gradient',
+    buttonStyle: 'btn-gradient-purple',
     buttonText: 'Try Now',
-    image: SmileMac,
+    image: Dev,
     switchSide: true
   },
 ]

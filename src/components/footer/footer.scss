@@ -1,0 +1,43 @@
+.footer {
+  height: 100px;
+  background: #1c0340;
+  padding: 1rem;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    .side-a {
+      .copyright-block {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: .5rem;
+        & > * {
+          margin-right: 2rem;
+          color: #dedede;
+        }
+        .copyright {
+          color: #fff;
+          font-size: 1rem;
+        }
+        a {
+          text-decoration: none;
+          font-size: .85rem;
+        }
+      }
+      .logo {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #fff;
+      }
+    }
+    .side-b {
+      svg {
+        height: 25px;
+        width: 25px;
+        color: #fff;
+        &:not(:last-child) {
+          margin-right: .5rem;
+        }
+      }
+    }
+  }
+}

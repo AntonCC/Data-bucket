@@ -1,5 +1,5 @@
 import React from 'react'
-import { cardInfo, bannerInfo } from './homeInfo'
+import { cardInfo, cardInfo2, bannerInfo } from './homeInfo'
 import Hero from '../components/hero/hero'
 import HeroListDark from '../components/hero-list-dark/hero-list-dark'
 import Cards from '../components/cards/cards'
@@ -16,6 +16,7 @@ const Home = () => {
           <Banner {...info}/>
         ))
       }
+      <Cards cardInfo={cardInfo2} bgClass="purple-svg"/>
     </div>
   )
 }

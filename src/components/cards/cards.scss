@@ -1,5 +1,9 @@
 .cards {
   padding: 4rem 0;
+  &.purple-svg {
+    background: #665dc3;
+    background: url('../../img/hero-bg.svg');
+  }
   .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, 375px);

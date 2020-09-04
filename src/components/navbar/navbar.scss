@@ -1,5 +1,10 @@
 .navbar {
   box-shadow: 0 3px 10px -6px #999;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 5;
+  top: 0;
   .container {
     display: flex;
     justify-content: space-between;

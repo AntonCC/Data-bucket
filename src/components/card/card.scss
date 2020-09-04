@@ -1,19 +1,29 @@
 .card {
   box-shadow: rgba(28, 28, 43, 0.125) 0px 0.75rem 2.25rem 0.5rem;
-  padding: 1rem 2rem;;
+  padding: 1rem 2rem;
   border-radius: 10px;
+  border-top-left-radius: 20px;
   position: relative;
+  background: #fff;
   .icon {
     position: absolute;
     top: -1px;
     left: -1px;
-    background: #4B77BE;
     height: 35px;
     width: 35px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    &.blue {
+      background: #4B77BE;
+    }
+    &.green {
+      background: #26A65B;
+    }
+    &.violet {
+      background: #5B3256;
+    }
     svg {
       height: 20px;
       width: 20px;
@@ -21,10 +31,18 @@
     }
   }
   h3 {
-    color: #4B77BE;
     margin-bottom: .75rem;   
     font-size: 1.25rem;
     padding-left: 2rem;
+    &.blue {
+      color: #4B77BE;
+    }
+    &.green {
+      color: #26A65B;
+    }
+    &.violet {
+      color: #5B3256;
+    }
   }
   h5 {
     font-size: .9rem;
