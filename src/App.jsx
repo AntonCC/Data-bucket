@@ -5,6 +5,7 @@ import NavPlaceholder from './components/nav-placeholder/nav-placeholder'
 import Navbar from './components/navbar/navbar'
 import Footer from './components/footer/footer'
 import Home from './pages/home'
+import Pricing from './pages/pricing'
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <Navbar />
       <NavPlaceholder />
       <Switch>
-        <Route exact path='/' name='Home' component={Home} />
+        <Route key='Home' exact path='/' component={Home} />
+        <Route key='Pricing' exact path='/pricing' component={Pricing} />
       </Switch>
       <Footer />
     </div>
