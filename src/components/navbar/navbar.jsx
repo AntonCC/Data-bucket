@@ -9,18 +9,22 @@ const Navbar = () => {
     <div className="navbar">
       <div className="container">
         <div className="logo">
-          <h2>Data <span className="fade">Bucket</span></h2>
+          <Link to="/">
+            <h2>Data <span className="fade">Bucket</span></h2>
+          </Link>
         </div>
         <ul className="nav-list">
-          <li><Link to='/'>Create</Link></li>
-          <li><Link to='/'>Tools</Link></li>
-          <li><Link to='/'>Explore</Link></li>
-          <li><Link to='/'>Learn</Link></li>
-          <li><Link to='/'>Pricing</Link></li>
+          <li><Link to='/explore'>Explore</Link></li>
+          <li><Link to='/learn'>Learn</Link></li>
+          <li><Link to='/pricing'>Pricing</Link></li>
         </ul>
         <div className="cta-group">
-          <Button buttonStyle="btn-outline">Login</Button>
-          <Button buttonStyle="btn-primary">Sign Up</Button>
+          <Link to="/signin">
+            <Button buttonStyle="btn-outline">Login</Button>
+          </Link>
+          <Link to="/signin">
+            <Button buttonStyle="btn-primary">Sign Up</Button>
+          </Link>
         </div>
         <div className="mobile-hamburger">
           <Hamburger />

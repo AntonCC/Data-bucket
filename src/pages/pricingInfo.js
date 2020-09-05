@@ -31,6 +31,29 @@ export const pricingInfo = [
       'Priority support'
     ],
     active: 'active',
-    btnAltColor: true
+  },
+]
+
+export const utilityInfo = [
+  {
+    tier: 'Basic',
+    subtitle: 'Extra editing options',
+    price: '$10/mo',
+    features: [
+      'In browser video editor',
+      'No video watermarks'
+    ]
+  },
+  {
+    tier: 'Business',
+    subtitle: 'All features',
+    price: '$20/mo',
+    features: [
+      'In browser video editor',
+      'No video watermarks',
+      'All editor features unlocked',
+      'Faster download speeds'
+    ],
+    active: 'active',
   },
 ]

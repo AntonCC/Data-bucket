@@ -19,7 +19,7 @@ const PricingCard = ({ tier, subtitle, price, features, active, btnAltColor }) =
       </div>
       <div className="bottom">
         <div className="price">{ price }</div>
-        <Button buttonStyle={`${btnAltColor ? 'btn-gradient' : 'btn-gradient'}`}>Purchase</Button>
+        <Button buttonStyle='btn-gradient'>Purchase</Button>
       </div>
     </div>
   )

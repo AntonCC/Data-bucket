@@ -1,12 +1,12 @@
 import React from 'react'
 import './title-description.scss'
 
-const TitleDescription = () => {
+const TitleDescription = ({ title, body, color }) => {
   return (
     <div className="title-description">
       <div className="container">
-        <h2>Pricing Plans</h2>
-        <p>The plans below are designed to cater to most use cases. For custom plans feel free to contact us.</p>
+        <h2 style={{ color: color }}>{ title }</h2>
+        <p>{ body }</p>
       </div>
     </div>
   )
