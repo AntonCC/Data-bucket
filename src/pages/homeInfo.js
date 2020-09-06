@@ -6,10 +6,18 @@ import {ReactComponent as Window } from '../img/icons/window-restore-solid.svg'
 import {ReactComponent as Check } from '../img/icons/check-solid.svg'
 import {ReactComponent as Database } from '../img/icons/database-solid.svg'
 import {ReactComponent as Privacy } from '../img/icons/user-shield-solid.svg'
+import Waves from '../img/waves.jpg'
 import SmileMac from '../img/smile-mac.jpg'
 import MacFile from '../img/mac-file.jpg'
 import Ipad from '../img/ipad.jpg'
 import Dev from '../img/ipad.jpg'
+
+export const heroInfo = {
+  title: "Reduce the size of large files with Data Bucket's online compressor",
+  subtitle: 'No downloads are necessary! Manage your files in the browser, and quickly share them.',
+  buttonText: 'Try Data Bucket',
+  image: Waves
+}
 
 export const cardInfo = [
   {

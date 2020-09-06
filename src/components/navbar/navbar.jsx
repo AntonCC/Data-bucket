@@ -15,7 +15,7 @@ const Navbar = () => {
         </div>
         <ul className="nav-list">
           <li><Link to='/explore'>Explore</Link></li>
-          <li><Link to='/learn'>Learn</Link></li>
+          <li><Link to='/about'>About</Link></li>
           <li><Link to='/pricing'>Pricing</Link></li>
         </ul>
         <div className="cta-group">
