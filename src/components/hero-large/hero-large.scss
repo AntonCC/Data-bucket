@@ -1,4 +1,24 @@
 .hero-large {
   height: 400px;
   background: linear-gradient(to right, rgba(102, 93, 195, .9), rgba(102, 93, 195, .9)), url('../../img/professional.jpg') no-repeat bottom/cover;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      color: #fff;
+      text-shadow: 1px 1px #444;
+      font-size: 2.25rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      color: #fff;
+      text-shadow: 1px 1px #444;
+      font-size: 1.125rem;
+      max-width: 500px;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
 }

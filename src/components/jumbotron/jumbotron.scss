@@ -1,0 +1,17 @@
+.jumbotron {
+  height: 200px;
+  background: #f6f6f8;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      margin-bottom: 1rem;
+    }
+    p {
+      max-width: 500px;
+      text-align: center;
+    }
+  }
+}
