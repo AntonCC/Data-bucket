@@ -20,7 +20,7 @@ function App() {
         <Route key='Pricing' exact path='/pricing' component={Pricing} />
         <Route key='SignIn' exact path='/signin' component={SignInSignUp} />
       </Switch>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
