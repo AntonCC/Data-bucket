@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.scss';
 import { Switch, Route } from 'react-router-dom'
+import { SignProvider } from './contexts/signContext'
 import NavPlaceholder from './components/nav-placeholder/nav-placeholder'
 import Navbar from './components/navbar/navbar'
 import Footer from './components/footer/footer'
@@ -11,7 +12,8 @@ import SignInSignUp from './pages/sign-in-sign-up'
 
 function App() {
   return (
-    <div className="App">
+    <SignProvider>
+      <div className="App">
       <Navbar />
       <NavPlaceholder />
       <Switch>
@@ -22,6 +24,7 @@ function App() {
       </Switch>
       {/* <Footer /> */}
     </div>
+    </SignProvider>
   );
 }
 

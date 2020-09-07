@@ -1,10 +1,23 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './navbar.scss'
 import { Link } from 'react-router-dom'
 import Button from '../button/button'
 import { ReactComponent as Hamburger} from '../../img/icons/bars-solid.svg'
+import { SignContext } from '../../contexts/signContext'
 
 const Navbar = () => {
+  const [sign, setSign] = useContext(SignContext)
+
+  const signIn = () => {
+    // false renders Sign In
+    setSign(false)
+  }
+
+  const signUp = () => {
+    // true renders Sign Up
+    setSign(true)
+  }
+
   return (
     <div className="navbar">
       <div className="container">
@@ -19,10 +32,10 @@ const Navbar = () => {
           <li><Link to='/pricing'>Pricing</Link></li>
         </ul>
         <div className="cta-group">
-          <Link to="/signin">
+          <Link to="/signin" onClick={signIn}>
             <Button buttonStyle="btn-outline">Login</Button>
           </Link>
-          <Link to="/signin">
+          <Link to="/signin" onClick={signUp}>
             <Button buttonStyle="btn-primary">Sign Up</Button>
           </Link>
         </div>

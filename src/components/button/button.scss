@@ -7,6 +7,9 @@
   display: inline-flex;
   font-weight: 700;
   justify-content: center;
+  transition: transform 70ms ease-out;
+  user-select: none;
+  outline: none;
   &.btn-primary {
     background: #1c0340;
     color: #fff;
@@ -24,5 +27,8 @@
     background: rgb(3,182,105);
     background: linear-gradient(216deg, rgba(3,182,105,1) 0%, rgba(61,6,140,1) 100%);
     color: #fff
+  }
+  &:active {
+    transform: scale(.9);
   }
 }
