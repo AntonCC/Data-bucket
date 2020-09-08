@@ -7,11 +7,13 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
     align-items: center;
+    min-height: 45vh;
     .side-a {
       color: #fff;
       h1 {
         margin-bottom: 1rem;
         text-shadow: 1px 1px #444;
+        font-weight: 500;
       }
       h2 {
         font-weight: 400;
@@ -27,7 +29,7 @@
         display: block;
         width: 100%;
         height: 100%;
-        max-height: 300px;
+        max-height: 350px;
         max-width: 500px;
         object-fit: cover;
         border-radius: 10px;
@@ -65,9 +67,17 @@
 
   // Full screen
   .hero.extend {
-    min-height: calc(100vh - 80px);
+    min-height: calc(100vh - 50px);
     .container {
       grid-template-columns: 1fr;
+      .side-a {
+        h1 {
+          max-width: 600px;
+        }
+        h2 {
+          max-width: 500px;
+        }
+      }
       .side-b {
         justify-content: center;
         img {

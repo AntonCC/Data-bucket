@@ -1,0 +1,40 @@
+.accordion {
+  max-width: 700px;
+  margin: 0 auto;
+  .item-wrap {
+    position: relative;
+    display: flex;
+    .item {
+      background-color: #f6f6f8;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      &.active, &:hover {
+        background-color: #ccc;
+      }
+    }
+    svg {
+      height: 20px;
+      width: 20px;
+      position: absolute;
+      right: 2%;
+      top: calc(50% - 10px);
+    }
+  }
+  .panel {
+    padding: 0 18px;
+    background-color: #fff;
+    display: none;
+    overflow: hidden;
+    transition: all 400ms ease-out;
+  }
+  &.active {
+    .panel {
+      display: block;
+    }
+  }
+}
