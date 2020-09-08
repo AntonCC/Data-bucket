@@ -16,7 +16,8 @@ export const heroInfo = {
   title: "Reduce the size of large files with Data Bucket's online compressor",
   subtitle: 'No downloads are necessary! Manage your files in the browser, and quickly share them.',
   buttonText: 'Try Data Bucket',
-  image: Waves
+  image: Waves,
+  extend: true
 }
 
 export const cardInfo = [

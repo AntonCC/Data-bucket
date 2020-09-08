@@ -9,6 +9,7 @@ import Home from './pages/home'
 import Explore from './pages/explore'
 import Pricing from './pages/pricing'
 import SignInSignUp from './pages/sign-in-sign-up'
+import About from './pages/about'
 
 function App() {
   return (
@@ -21,8 +22,9 @@ function App() {
         <Route key='Explore' exact path='/explore' component={Explore}/>
         <Route key='Pricing' exact path='/pricing' component={Pricing} />
         <Route key='SignIn' exact path='/signin' component={SignInSignUp} />
+        <Route key='About' exact path='/about' component={About} />
       </Switch>
-      {/* <Footer /> */}
+      <Footer />
     </div>
     </SignProvider>
   );

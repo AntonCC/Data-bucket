@@ -3,11 +3,8 @@
   .container {
     display: flex;
     justify-content: center;
-    align-items: center;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
       0 10px 10px rgba(0,0,0,0.22);
-    height: 500px;
-    max-height: 600px;
     .side-a {
       width: 50%;
       display: flex;
@@ -63,7 +60,7 @@
     }
     .side-b {
       width: 50%;
-      height: 100%;
+      min-height: 100%;
       background: rgb(61,44,168);
       background: linear-gradient(216deg, rgba(61,44,168,1) 0%, rgba(120,31,222,1) 100%);
       padding: 2rem;
@@ -79,6 +76,47 @@
       p {
         margin-bottom: 1.5rem;
         max-width: 300px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .sign-up {
+    .container {
+      flex-direction: column;
+      .side-a {
+        width: 100%;
+        h1 {
+          font-size: 1.75rem;
+        }
+        span {
+          font-size: .8rem;
+        }
+        form {
+          padding: 0 25px;
+        }
+      }
+      .side-b {
+        width: 100%;
+        h1 {
+          font-size: 1.75rem;
+        }
+        p {
+          font-size: .9rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .sign-up {
+    .container {
+      .side-a {
+        form {
+          padding: 0 0;
+        }
       }
     }
   }

@@ -1,12 +1,12 @@
 import React from 'react'
 import './jumbotron.scss'
 
-const Jumbotron = () => {
+const Jumbotron = ({ title, body }) => {
   return (
     <div className="jumbotron">
       <div className="container">
-        <h2>One stop shop for all your editing needs</h2>
-        <p>Forget juggling multiple apps and file storage solutions just to get your work done. Sign up for Data Bucket and make your life easier!</p>
+        <h2>{ title }</h2>
+        <p>{ body }</p>
       </div>
     </div>
   )

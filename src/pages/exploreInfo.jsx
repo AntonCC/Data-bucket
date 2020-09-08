@@ -35,3 +35,8 @@ export const bannerInfo = [
     switchSide: true
   },
 ]
+
+export const jumboInfo = {
+  title: 'One stop shop for all your editing needs',
+  body: 'Forget juggling multiple apps and file storage solutions just to get your work done. Sign up for Data Bucket and make your life easier!'
+}
