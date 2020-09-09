@@ -11,7 +11,11 @@ const About = () => {
     <div className="about">
       <Hero {...heroInfo}/>
       <Jumbotron {...jumboInfo}/>
-      <Banner {...bannerInfo}/>
+      {
+        bannerInfo.map(info => (
+          <Banner {...info} />
+        ))
+      }
       <AccordionContainer accordionInfo={accordionInfo}/>
       <ContactBox />
     </div>

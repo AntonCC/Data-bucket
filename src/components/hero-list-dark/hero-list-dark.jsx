@@ -1,11 +1,20 @@
 import React from 'react'
 import './hero-list-dark.scss'
+import { useInView } from 'react-intersection-observer'
+import { motion } from 'framer-motion'
 import Mac from '../../img/mac-purple.jpg'
 
 const HeroListDark = () => {
+  const { ref, inView } = useInView({
+    threshold: .8
+  })
+
   return (
-    <div className="hero-list-dark">
-      <div className="container">
+    <div className="hero-list-dark" ref={ref}>
+      <motion.div className="container"
+        initial={{ opacity: 0 }}
+        animate={ inView ? { opacity: 1 } : '' }
+      >
         <div className="side-a">
           <h2>How to compress files with Data Bucket</h2>
           <div className="line-item">
@@ -24,7 +33,7 @@ const HeroListDark = () => {
         <div className="side-b">
           <img src={Mac} alt="apple computer"/>
         </div>
-      </div>
+      </motion.div>
     </div>
   )
 }

@@ -8,7 +8,7 @@ const Banner = ({ title, body, buttonStyle, buttonText, image, switchSide }) => 
   const [initialLoad, setInitialLoad] = useState(true)
 
   const { ref, inView } = useInView({
-    threshold: .6
+    threshold: .8
   })
   return (
     <motion.div className="banner" 

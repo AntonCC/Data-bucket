@@ -3,14 +3,13 @@ import './hero.scss'
 import { motion } from 'framer-motion'
 import Button from '../../components/button/button'
 
-const Hero = ({ title, subtitle, buttonText, image, video, extend, initialLoad}) => {
-  console.log("From hero", initialLoad)
+const Hero = ({ title, subtitle, buttonText, image, video, extend }) => {
   return (
     <div className={`hero ${extend ? 'extend' : ''}`}>
       <div className="container">
         <motion.div className="side-a" 
-          initial={ initialLoad ? { opacity: 0, y: -25} : ''} 
-          animate={ initialLoad ? { opacity: 1, y: 0 } : ''} 
+          initial={ { opacity: 0, y: -25} } 
+          animate={ { opacity: 1, y: 0 } } 
           transition={{ delay: .25}}
         >
           <h1>{ title }</h1>
