@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './accordion.scss'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { ReactComponent as Plus } from '../../img/icons/plus-solid.svg'
 import { ReactComponent as Minus } from '../../img/icons/minus-solid.svg'
 
@@ -15,11 +15,28 @@ const Accordion = ({ title, body }) => {
     <div className={`accordion ${active ? 'active' : ''}`}>
       <div className="item-wrap">
         <button className="item" onClick={handleClick}>{ title }</button>
-        {
-          active
-            ? <Minus />
-            : <Plus />
-        }
+        <AnimatePresence>
+          {active && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            >
+              <Minus />
+            </motion.div>
+          )}
+        </AnimatePresence>
+        <AnimatePresence>
+          {!active && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+              >
+                <Plus />
+              </motion.div>
+            )}
+        </AnimatePresence>
       </div>
       <motion.div className="panel"  
         animate={active ? { height: 100 } : { height: 0 }}
