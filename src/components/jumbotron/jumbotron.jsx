@@ -1,13 +1,29 @@
 import React from 'react'
 import './jumbotron.scss'
+import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+import Button from '../button/button'
 
-const Jumbotron = ({ title, body, extend }) => {
+const Jumbotron = ({ title, body, buttonText, extend, link }) => {
+  const { ref, inView } = useInView({
+    threshold: .4
+  })
+
   return (
     <div className={`jumbotron ${ extend ? 'extend' : ''}`}>
-      <div className="container">
+      <motion.div className="container"
+        ref={ref}
+        initial={{ opacity: 0 }}
+        animate={ inView ? { opacity: 1 } : ''}
+      >
         <h2>{ title }</h2>
         <p>{ body }</p>
-      </div>
+        {
+          buttonText
+            ? <Button buttonStyle="btn-gradient" link={link}>{ buttonText }</Button>
+            : ''
+        }
+      </motion.div>
     </div>
   )
 }

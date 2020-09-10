@@ -3,7 +3,7 @@ import './hero.scss'
 import { motion } from 'framer-motion'
 import Button from '../../components/button/button'
 
-const Hero = ({ title, subtitle, buttonText, image, video, extend }) => {
+const Hero = ({ title, subtitle, buttonText, image, video, extend, link }) => {
   return (
     <div className={`hero ${extend ? 'extend' : ''}`}>
       <div className="container">
@@ -16,7 +16,7 @@ const Hero = ({ title, subtitle, buttonText, image, video, extend }) => {
           <h2>{ subtitle }</h2>
           {
             buttonText
-              ? <Button buttonStyle="btn-gradient">{ buttonText }</Button>
+              ? <Button buttonStyle="btn-gradient" link={link}>{ buttonText }</Button>
               : ''
           }       
         </motion.div>

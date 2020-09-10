@@ -1,25 +1,22 @@
 import React, { useState, useEffect } from 'react'
-import { heroInfo, cardInfo, cardInfo2, bannerInfo } from './homeInfo'
+import { heroInfo, cardInfo, cardInfo2, bannerInfo, jumboInfo } from './homeInfo'
 import Hero from '../components/hero/hero'
 import HeroListDark from '../components/hero-list-dark/hero-list-dark'
 import Cards from '../components/cards/cards'
 import Banner from '../components/banner/banner'
+import Jumbotron from '../components/jumbotron/jumbotron'
 
 const Home = () => {
-  const [initialLoad, setInitialLoad] = useState(true)
-
+  const [initial, setInitial] = useState(true)
   useEffect(() => {
-    if(window.sessionStorage.getItem('homeInitial') === null) {
-      setInitialLoad(true)
-      window.sessionStorage.setItem('homeInitial', 1)
-    } else {
-      setInitialLoad(false)
+    return () => {
+      setInitial(false)
     }
-  })
+  }, [])
 
   return (
     <div>
-      <Hero {...heroInfo} initialLoad={initialLoad}/>
+      <Hero {...heroInfo} />
       <Cards cardInfo={cardInfo}/>
       <HeroListDark />
       {
@@ -28,6 +25,7 @@ const Home = () => {
         ))
       }
       <Cards cardInfo={cardInfo2} bgClass="purple-svg"/>
+      <Jumbotron {...jumboInfo}/>
     </div>
   )
 }

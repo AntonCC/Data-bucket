@@ -1,34 +1,38 @@
-.button {
-  padding: .5rem 1.5rem;
-  border-radius: 25px;
-  font-size: .9rem;
-  cursor: pointer;
-  margin: auto;
-  display: inline-flex;
-  font-weight: 700;
-  justify-content: center;
-  transition: transform 70ms ease-out;
-  user-select: none;
-  outline: none;
-  &.btn-primary {
-    background: #1c0340;
-    color: #fff;
-    border: 2px solid #1c0340;
-  }
-  &.btn-outline {
-    border: 2px solid #dedede;
-  }
-  &.btn-gradient {
-    background: rgb(3,182,105);
-    background: linear-gradient(39deg, rgba(3,182,105,1) 0%, rgba(0,212,255,1) 100%);
-    color: #fff;  
-  }
-  &.btn-gradient-purple {
-    background: rgb(3,182,105);
-    background: linear-gradient(216deg, rgba(3,182,105,1) 0%, rgba(61,6,140,1) 100%);
-    color: #fff
-  }
-  &:active {
-    transform: scale(.9);
+.btn-wrap {
+  display: flex;
+  .button {
+    padding: .5rem 1.5rem;
+    border-radius: 25px;
+    font-size: .9rem;
+    cursor: pointer;
+    display: inline-flex;
+    font-weight: 700;
+    justify-content: center;
+    transition: transform 70ms ease-out;
+    user-select: none;
+    outline: none;;
+    &.btn-primary {
+      background: #1c0340;
+      color: #fff;
+      border: 2px solid #1c0340;
+    }
+    &.btn-outline {
+      border: 2px solid #dedede;
+      color: #4e0eaa;
+    }
+    &.btn-gradient {
+      background: rgb(3,182,105);
+      background: linear-gradient(39deg, rgba(3,182,105,1) 0%, rgba(0,212,255,1) 100%);
+      color: #fff;  
+    }
+    &.btn-gradient-purple {
+      background: rgb(3,182,105);
+      background: linear-gradient(216deg, rgba(3,182,105,1) 0%, rgba(61,6,140,1) 100%);
+      color: #fff
+    }
+    &:active {
+      transform: scale(.9);
+    }
   }
 }
+

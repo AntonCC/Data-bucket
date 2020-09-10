@@ -10,14 +10,15 @@ import PEdit from '../img/p-edit.jpg'
 import SmileMac from '../img/smile-mac.jpg'
 import MacFile from '../img/mac-file.jpg'
 import Ipad from '../img/ipad.jpg'
-import Dev from '../img/ipad.jpg'
+import Dev from '../img/dev.jpg'
 
 export const heroInfo = {
   title: "Reduce the size of large files with Data Bucket's online compressor",
   subtitle: 'No downloads are necessary! Manage your files in the browser, and quickly share them.',
   buttonText: 'Try Data Bucket',
   image: PEdit,
-  extend: true
+  extend: true,
+  link: '/pricing'
 }
 
 export const cardInfo = [
@@ -73,7 +74,8 @@ export const bannerInfo = [
     body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim asperiores commodi explicabo eaque quae. Earum placeat debitis perferendis, illum, quo delectus odit magnam, temporibus adipisci esse quis? Veritatis earum aspernatur perspiciatis, placeat veniam tempore dolores.',
     buttonStyle: 'btn-gradient',
     buttonText: 'Try Now',
-    image: SmileMac
+    image: SmileMac,
+    link: '/pricing'
   },
   {
     title: 'Maintain excellent quality when compressed.',
@@ -81,14 +83,16 @@ export const bannerInfo = [
     buttonStyle: 'btn-gradient-purple',
     buttonText: 'Try Now',
     image: MacFile,
-    switchSide: true
+    switchSide: true,
+    link: '/pricing'
   },
   {
     title: 'No extensions needed',
     body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim asperiores commodi explicabo eaque quae. Earum placeat debitis perferendis, illum, quo delectus odit magnam, temporibus adipisci esse quis? Veritatis earum aspernatur perspiciatis, placeat veniam tempore dolores.',
     buttonStyle: 'btn-gradient',
     buttonText: 'Try Now',
-    image: Ipad
+    image: Ipad,
+    link: '/pricing'
   },
   {
     title: 'Share files with anyone, anywhere',
@@ -96,6 +100,14 @@ export const bannerInfo = [
     buttonStyle: 'btn-gradient-purple',
     buttonText: 'Try Now',
     image: Dev,
-    switchSide: true
+    switchSide: true,
+    link: '/pricing'
   },
 ]
+
+export const jumboInfo = {
+  title: 'Thank you for your interest in Data Bucket',
+  buttonText: 'Try Now',
+  extend: true,
+  link: '/pricing'
+}

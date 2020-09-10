@@ -7,7 +7,7 @@ import Banner from '../components/banner/banner'
 const Explore = () => {
   return (
     <div className="explore">
-      <HeroLarge />
+      <HeroLarge link="/signin" />
       <Jumbotron {...jumboInfo}/>
       {
         bannerInfo.map(info => (
