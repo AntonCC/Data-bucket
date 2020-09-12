@@ -26,7 +26,7 @@ const Hero = ({ title, subtitle, buttonText, image, video, extend, link }) => {
         >
           {
             image
-              ? <img src={ image } />
+              ? <img src={ image } alt="hero"/>
               : <video src={ video } autoPlay loop muted/>
           }
         </motion.div>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { heroInfo, jumboInfo, bannerInfo, accordionInfo } from './aboutInfo'
 import Hero from '../components/hero/hero'
 import Jumbotron from '../components/jumbotron/jumbotron'

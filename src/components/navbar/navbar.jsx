@@ -1,11 +1,11 @@
 import React, { useContext } from 'react'
+import { SignContext } from '../../contexts/signContext'
 import './navbar.scss'
 import { Link } from 'react-router-dom'
 import Button from '../button/button'
 import { ReactComponent as Hamburger} from '../../img/icons/bars-solid.svg'
-import { SignContext } from '../../contexts/signContext'
 
-const Navbar = () => {
+const Navbar = ({ handleSidebar }) => {
   const [sign, setSign] = useContext(SignContext)
   const signIn = () => {
     // false renders Sign In
@@ -38,7 +38,7 @@ const Navbar = () => {
             <Button buttonStyle="btn-primary">Sign Up</Button>
           </Link>
         </div>
-        <div className="mobile-hamburger">
+        <div className="mobile-hamburger" onClick={handleSidebar}>
           <Hamburger />
         </div>
       </div>

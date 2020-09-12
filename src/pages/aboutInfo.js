@@ -1,7 +1,6 @@
 import HeroVid from '../video/hero-vid.mp4'
 import Goals from '../img/goals.jpg'
 import Values from '../img/values.jpg'
-import Banner from '../components/banner/banner'
 
 export const heroInfo = {
   title: 'We make editing easy',

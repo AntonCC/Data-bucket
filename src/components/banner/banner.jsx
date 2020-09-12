@@ -8,7 +8,7 @@ const Banner = ({ title, body, buttonStyle, buttonText, image, switchSide, link 
     <div className="banner" >
       <div className={`container ${switchSide ? 'banner-switch': ''}`}>
         <div className="side-a">
-          <img src={ image } />
+          <img src={ image } alt="banner"/>
         </div>
         <div className="side-b">
           <h2>{ title }</h2>

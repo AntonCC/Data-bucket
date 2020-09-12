@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.scss';
 import { Switch, Route } from 'react-router-dom'
 import { SignProvider } from './contexts/signContext'
@@ -13,13 +13,23 @@ import Pricing from './pages/pricing'
 import SignInSignUp from './pages/sign-in-sign-up'
 import About from './pages/about'
 
-function App() {
+const App = () => {
+  const [sidebar, setSidebar] = useState(false)
+
+  const handleSidebar = () => {
+    setSidebar(!sidebar)
+  }
+
+  const closeSidebar = () => {
+    setSidebar(false)
+  }
+
   return (
     <SignProvider>
     <ScrollTop/>
-      <div className="App">
-        <Sidebar />
-        <Navbar />
+    <Sidebar sidebar={sidebar} handleSidebar={handleSidebar} />
+      <div className='App' onClick={sidebar ? closeSidebar : ''}>
+        <Navbar handleSidebar={handleSidebar} />
         <NavPlaceholder />
         <Switch>
           <Route key='Home' exact path='/' component={Home} />
