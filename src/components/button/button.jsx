@@ -2,7 +2,7 @@ import React from 'react'
 import './button.scss'
 import { Link } from 'react-router-dom'
 
-const STYLES = ['btn-primary', 'btn-outline', 'btn-gradient', 'btn-gradient-purple']
+const STYLES = ['btn-primary', 'btn-outline', 'btn-outline-white', 'btn-gradient', 'btn-gradient-purple']
 
 const Button = ({ children, buttonStyle, justify, link }) => {
   const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0]

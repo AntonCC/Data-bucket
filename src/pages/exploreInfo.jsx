@@ -1,5 +1,5 @@
 import WomenWorking from '../img/women-working.jpg'
-import Contrast from '../img/contrast.jpg'
+import Abstract from '../img/abstract.jpg'
 import BGremover from '../img/bg-remover.jpg'
 import VectorComputer from '../img/vector-computer.jpg'
 
@@ -16,7 +16,7 @@ export const bannerInfo = [
     body: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, minus ea. Fuga, quas dolorem suscipit optio laboriosam temporibus, cumque eius, totam deserunt aspernatur praesentium facere.',
     buttonStyle: 'btn-gradient-purple',
     buttonText: 'Learn More',
-    image: Contrast,
+    image: Abstract,
     switchSide: true
   },
   {

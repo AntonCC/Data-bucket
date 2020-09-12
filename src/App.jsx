@@ -15,7 +15,7 @@ import About from './pages/about'
 function App() {
   return (
     <SignProvider>
-      <ScrollTop/>
+    <ScrollTop/>
       <div className="App">
         <Navbar />
         <NavPlaceholder />

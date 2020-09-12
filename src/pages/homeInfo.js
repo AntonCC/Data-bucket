@@ -53,7 +53,7 @@ export const cardInfo2 = [
     accentColor: 'blue'
   },
   {
-    title: 'Central location for your files',
+    title: 'Central location for files',
     subtitle: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
     body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quis tempora! Molestiae dignissimos sed numquam praesentium. Quae nam earum esse omnis. Iste eveniet numquam incidunt aliquid! A aperiam ad atque.',
     icon: <Database />,

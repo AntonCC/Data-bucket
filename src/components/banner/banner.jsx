@@ -1,24 +1,11 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './banner.scss'
-import { useInView } from 'react-intersection-observer'
-import useIntro from '../../hooks/useIntro'
-import { motion } from 'framer-motion'
 import Button from '../button/button'
 
 const Banner = ({ title, body, buttonStyle, buttonText, image, switchSide, link }) => {
-  const showAnimation = useIntro()
-
-  const { ref, inView } = useInView({
-    threshold: .8
-  })
 
   return (
-    <motion.div className="banner" 
-      ref={ref}
-      initial={ showAnimation ? {  opacity: 0 } : { opacity: 1 }}
-      animate={ inView ? {  opacity: 1 } : ''}
-      transition={{ duration: .75 }}
-    >
+    <div className="banner" >
       <div className={`container ${switchSide ? 'banner-switch': ''}`}>
         <div className="side-a">
           <img src={ image } />
@@ -33,7 +20,7 @@ const Banner = ({ title, body, buttonStyle, buttonText, image, switchSide, link 
           }
         </div>
       </div>
-    </motion.div>
+    </div>
   )
 }
 export default Banner

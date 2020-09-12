@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { heroInfo, cardInfo, cardInfo2, bannerInfo, jumboInfo } from './homeInfo'
 import Hero from '../components/hero/hero'
 import HeroListDark from '../components/hero-list-dark/hero-list-dark'
@@ -7,17 +7,11 @@ import Banner from '../components/banner/banner'
 import Jumbotron from '../components/jumbotron/jumbotron'
 
 const Home = () => {
-  const [initial, setInitial] = useState(true)
-  useEffect(() => {
-    return () => {
-      setInitial(false)
-    }
-  }, [])
 
   return (
     <div>
       <Hero {...heroInfo} />
-      <Cards cardInfo={cardInfo}/>
+      <Cards cardInfo={cardInfo} extend/>
       <HeroListDark />
       {
         bannerInfo.map(info => (

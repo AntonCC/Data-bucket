@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { SignContext } from '../../contexts/signContext'
 import './sign-in.scss'
 import { Link } from 'react-router-dom'
 import  Button  from '../button/button'
 
 const SignIn = () => {
+  const [sign, setSign] = useContext(SignContext)
+
+  const signUp = () => {
+    // true renders Sign Up
+    setSign(true)
+  }
+
   return (
     <div className="sign-in">
       <div className="container">
@@ -33,8 +41,8 @@ const SignIn = () => {
         <div className="side-b">
           <h1>Hello there!</h1>
           <p>Need an account? Hit the sign up button below.</p>
-          <div className="cta-wrap">
-            <Button buttonStyle="btn-outline">Sign Up</Button>
+          <div className="cta-wrap" onClick={signUp}>
+            <Button buttonStyle="btn-outline-white">Sign Up</Button>
           </div>
         </div>
       </div>

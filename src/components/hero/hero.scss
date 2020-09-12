@@ -2,12 +2,19 @@
   background: #665dc3;
   background: url('../../img/Diamond-Sunset.svg');
   padding: 2rem 0;
+  min-height: 470px;
+  display: flex;
+  align-items: center;
+  &.extend {
+    height: calc(60vh - 50px);
+    max-height: 650px;
+  }
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
     align-items: center;
-    min-height: 45vh;
+    // min-height: 45vh;
     .side-a {
       color: #fff;
       h1 {

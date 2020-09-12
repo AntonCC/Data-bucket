@@ -1,5 +1,5 @@
 .footer {
-  height: 100px;
+  // height: 100px;
   background: #1c0340;
   padding: 1rem;
   .container {
@@ -34,8 +34,27 @@
         height: 25px;
         width: 25px;
         color: #fff;
+        cursor: pointer;
         &:not(:last-child) {
           margin-right: .5rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .footer {
+    .container {
+      flex-direction: column;
+      .side-a {
+        .copyright-block {
+          .copyright {
+            font-size: .85rem;
+          }
+          a {
+            font-size: .75rem;
+          }
         }
       }
     }
