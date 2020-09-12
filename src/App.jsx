@@ -3,6 +3,7 @@ import './App.scss';
 import { Switch, Route } from 'react-router-dom'
 import { SignProvider } from './contexts/signContext'
 import ScrollTop from './components/scroll-top/scroll-top'
+import Sidebar from './components/sidebar/sidebar'
 import NavPlaceholder from './components/nav-placeholder/nav-placeholder'
 import Navbar from './components/navbar/navbar'
 import Footer from './components/footer/footer'
@@ -17,6 +18,7 @@ function App() {
     <SignProvider>
     <ScrollTop/>
       <div className="App">
+        <Sidebar />
         <Navbar />
         <NavPlaceholder />
         <Switch>

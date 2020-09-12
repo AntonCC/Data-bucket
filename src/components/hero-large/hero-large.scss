@@ -11,6 +11,7 @@
       text-shadow: 1px 1px #444;
       font-size: 2.25rem;
       margin-bottom: 1rem;
+      text-align: center;
     }
     p {
       color: #fff;
@@ -19,6 +20,16 @@
       max-width: 500px;
       text-align: center;
       margin-bottom: 2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .hero-large {
+    .container {
+      h2 {
+        font-size: 1.5rem;
+      }
     }
   }
 }

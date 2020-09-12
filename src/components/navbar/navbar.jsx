@@ -7,7 +7,6 @@ import { SignContext } from '../../contexts/signContext'
 
 const Navbar = () => {
   const [sign, setSign] = useContext(SignContext)
-
   const signIn = () => {
     // false renders Sign In
     setSign(false)

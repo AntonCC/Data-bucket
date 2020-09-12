@@ -12,7 +12,7 @@ export const heroInfo = {
 
 export const jumboInfo = {
   title: 'We empower your inner creative',
-  body: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi corporis, autem eaque numquam molestias accusantium natus hic quidem totam laborum, voluptas reprehenderit exercitationem iure! Assumenda, minima. Sit obcaecati optio quidem quod eaque cum impedit et.',
+  body: "Technology shouldn't get in the way of your creative work. Data Bucket editing and storage solutions allow you to focus on what matters most.",
   extend: true
 }
 
@@ -33,22 +33,22 @@ export const bannerInfo = [
 export const accordionInfo = [
   {
     title: 'What is Data Bucket?',
-    body: 'Test Text'
+    body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, nisi laborum pariatur ratione ullam dolore minus adipisci. Eius, voluptates nemo tempora natus sint at earum.'
   },
   {
     title: 'What problems do we aim to solve?',
-    body: 'Test Text'
+    body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, nisi laborum pariatur ratione ullam dolore minus adipisci. Eius, voluptates nemo tempora natus sint at earum.'
   },
   {
     title: 'Do we prioritize environmental friendliness?',
-    body: 'Test Text'
+    body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, nisi laborum pariatur ratione ullam dolore minus adipisci. Eius, voluptates nemo tempora natus sint at earum.'
   },
   {
     title: 'Does Data Bucket work on Mac and Linux?',
-    body: 'Test Text'
+    body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, nisi laborum pariatur ratione ullam dolore minus adipisci. Eius, voluptates nemo tempora natus sint at earum.'
   },
   {
     title: 'Can I use Data Bucket outside the browser?',
-    body: 'Test Text'
+    body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, nisi laborum pariatur ratione ullam dolore minus adipisci. Eius, voluptates nemo tempora natus sint at earum.'
   },
 ]
