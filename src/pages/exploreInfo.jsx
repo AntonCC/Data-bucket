@@ -9,7 +9,8 @@ export const bannerInfo = [
     body: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, minus ea. Fuga, quas dolorem suscipit optio laboriosam temporibus, cumque eius, totam deserunt aspernatur praesentium facere.',
     buttonStyle: 'btn-gradient',
     buttonText: 'Learn More',
-    image: WomenWorking
+    image: WomenWorking,
+    link: '/about'
   },
   {
     title: 'Image Contrast Adjuster',
@@ -17,14 +18,16 @@ export const bannerInfo = [
     buttonStyle: 'btn-gradient-purple',
     buttonText: 'Learn More',
     image: Abstract,
-    switchSide: true
+    switchSide: true,
+    link: '/about'
   },
   {
     title: 'Background Remover',
     body: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, minus ea. Fuga, quas dolorem suscipit optio laboriosam temporibus, cumque eius, totam deserunt aspernatur praesentium facere.',
     buttonStyle: 'btn-gradient',
     buttonText: 'Learn More',
-    image: BGremover
+    image: BGremover,
+    link: '/about'
   },
   {
     title: 'Vector Path Tool',
@@ -32,7 +35,8 @@ export const bannerInfo = [
     buttonStyle: 'btn-gradient-purple',
     buttonText: 'Learn More',
     image: VectorComputer,
-    switchSide: true
+    switchSide: true,
+    link: '/about'
   },
 ]
 

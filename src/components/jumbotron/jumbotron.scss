@@ -1,6 +1,8 @@
 .jumbotron {
   padding: 4rem;
   background: #f6f6f8;
+  display: flex;
+  align-items: center;
   .container {
     display: flex;
     flex-direction: column;

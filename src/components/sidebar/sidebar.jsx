@@ -30,7 +30,7 @@ const Sidebar = ({ sidebar, handleSidebar }) => {
 
   return (
     <div className={`sidebar ${sidebar ? 'open' : ''}`}>
-      <Cross />
+      <Cross onClick={handleSidebar} />
       <nav>
         <ul>
           <li><Link to="/" onClick={handleSidebar}>Home</Link></li>

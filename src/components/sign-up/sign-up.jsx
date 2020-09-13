@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useRef } from 'react'
 import { SignContext } from '../../contexts/signContext'
 import './sign-up.scss'
 import { Link } from 'react-router-dom'
@@ -6,10 +6,17 @@ import Button from '../button/button'
 
 const SignUp = () => {
   const [sign, setSign] = useContext(SignContext)
+  const formRef = useRef(null)
 
   const signIn = () => {
     // false renders Sign In
     setSign(false)
+  }
+
+  const handleSubmit = e => {
+    e.preventDefault()
+    formRef.current.reset()
+    alert('Thanks for signing up!')
   }
 
   return (
@@ -29,16 +36,14 @@ const SignUp = () => {
             </div>
           </div>
           <span>or use your email to register</span>
-          <form>
-            <input type="text" placeholder="Name"/>
-            <input type="email" placeholder="Email"/>
-            <input type="password" placeholder="Password"/>
-            <input type="password" placeholder="Confirm Password"/>
+          <form onSubmit={handleSubmit} ref={formRef}>
+            <input type="text" placeholder="Name" required/>
+            <input type="email" placeholder="Email" required/>
+            <input type="password" placeholder="Password" required/>
+            <input type="password" placeholder="Confirm Password" required/>
+            <Link to="#">Forgot your password?</Link>
+            <button type="submit">Sign Up</button>
           </form>
-          <Link to="#">Forgot your password?</Link>
-          <div className="cta-wrap">
-            <Button buttonStyle="btn-gradient">Sign in</Button>
-          </div>
         </div>
         <div className="side-b">
           <h1>Already have an account?</h1>

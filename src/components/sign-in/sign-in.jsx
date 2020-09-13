@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useRef } from 'react'
 import { SignContext } from '../../contexts/signContext'
 import './sign-in.scss'
 import { Link } from 'react-router-dom'
@@ -6,10 +6,17 @@ import  Button  from '../button/button'
 
 const SignIn = () => {
   const [sign, setSign] = useContext(SignContext)
+  const formRef = useRef(null)
 
   const signUp = () => {
     // true renders Sign Up
     setSign(true)
+  }
+
+  const handleSubmit = e => {
+    e.preventDefault()
+    formRef.current.reset()
+    alert('Thanks for signing in.')
   }
 
   return (
@@ -29,14 +36,12 @@ const SignIn = () => {
             </div>
           </div>
           <span>or use your account</span>
-          <form>
-            <input type="text" placeholder="Name"/>
-            <input type="password" placeholder="Password"/>
+          <form onSubmit={handleSubmit} ref={formRef}>
+            <input type="text" placeholder="Name" required/>
+            <input type="password" placeholder="Password" required/>
+            <Link to="#">Forgot your password?</Link>
+            <button type="submit">Sign In</button>
           </form>
-          <Link to="#">Forgot your password?</Link>
-          <div className="cta-wrap">
-            <Button buttonStyle="btn-gradient">Sign in</Button>
-          </div>
         </div>
         <div className="side-b">
           <h1>Hello there!</h1>
