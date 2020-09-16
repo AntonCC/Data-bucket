@@ -6,7 +6,6 @@ export const heroInfo = {
   title: 'We make editing easy',
   subtitle: 'Forget all the hassles of editing images and video. Our editor makes things simple and fun, so your creativity can run wild.',
   video: HeroVid,
-  extend: true
 }
 
 export const jumboInfo = {
