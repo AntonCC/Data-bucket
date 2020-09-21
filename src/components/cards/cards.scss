@@ -4,11 +4,21 @@
     background: #665dc3;
     background: url('../../img/Diamond-Sunset.svg');
   }
+  &.extend {
+    min-height: 45vh;
+    max-height: 680px;
+  }
   .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 375px);
-    grid-gap: 2rem;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    .card-wrap {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 375px);
+      grid-gap: 2rem;
+      justify-content: center;
+      height: 100%;
+    }
   }
 }
 
