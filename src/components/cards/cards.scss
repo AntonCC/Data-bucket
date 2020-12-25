@@ -1,26 +1,22 @@
 .cards {
   padding: 4rem 0;
   display: flex;
-  // align-items: center;
+  align-items: center;
   &.purple-svg {
     background: #665dc3;
     background: url('../../img/Diamond-Sunset.svg');
-  }
-  &.extend {
-    height: 45vh;
-    min-height: 300px;
-    max-height: 600px ;
   }
   .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 2rem 0;
     .card-wrap {
       display: grid;
       grid-template-columns: repeat(auto-fit, 375px);
       grid-gap: 2rem;
+      align-items: center;
       justify-content: center;
-      // height: 100%;
     }
   }
 }

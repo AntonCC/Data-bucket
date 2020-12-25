@@ -4,7 +4,7 @@ import Card from '../card/card'
 
 const Cards = ({ cardInfo, bgClass, extend }) => {
   return (
-    <div className={`cards ${ bgClass ? bgClass : '' } ${ extend ? 'extend' : '' }`}>
+    <div className={`cards ${ bgClass ? bgClass : '' }`}>
       <div className="container" >
         <div className="card-wrap">
           {cardInfo.map(info => (
