@@ -1,5 +1,5 @@
 .cards {
-  padding: 4rem 0;
+  padding: 4rem 2rem;
   display: flex;
   align-items: center;
   &.purple-svg {
@@ -13,7 +13,7 @@
     padding: 2rem 0;
     .card-wrap {
       display: grid;
-      grid-template-columns: repeat(auto-fit, 375px);
+      grid-template-columns: repeat(auto-fit, minmax(350px, 375px));
       grid-gap: 2rem;
       align-items: center;
       justify-content: center;
