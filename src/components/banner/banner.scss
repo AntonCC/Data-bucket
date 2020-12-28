@@ -55,7 +55,7 @@
         img {
           height: 100%;
           max-height: 400px;
-          border-radius: 0px;
+          border-radius: 0;
           border-top-left-radius: 10px;
           border-top-right-radius: 10px;
         }
@@ -63,6 +63,11 @@
       &.banner-switch {
         .side-a {
           order: 1;
+          img {
+            border-radius: 0;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+          }
         }
         .side-b {
           order: 2;

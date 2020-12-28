@@ -4,6 +4,21 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { ReactComponent as Plus } from '../../img/icons/plus-solid.svg'
 import { ReactComponent as Minus } from '../../img/icons/minus-solid.svg'
 
+const variants = {
+  open: {
+    height: '100%',
+    transition: {
+      duration: .15
+    } 
+  },
+  closed: {
+    height: 0,
+    transition: {
+      duration: .15
+    }
+  }
+}
+
 const Accordion = ({ title, body }) => {
   const [active, setActive] = useState(false)
 
@@ -38,12 +53,13 @@ const Accordion = ({ title, body }) => {
             )}
         </AnimatePresence>
       </div>
-      <motion.div className="panel"  
-        animate={active ? { height: 100 } : { height: 0 }}
-        transition={{ duration: .15 }}
-      >
-        <p>{ body }.</p>
-      </motion.div>
+        <motion.div className="panel"
+          animate={active ? { transform: 'scaleY(1)' } : { transform: 'scaleY(0)' }}
+          transition={{ duration: .15 }}
+        >
+          <p>{ body }.</p>
+        </motion.div>
+
     </div>
   )
 }

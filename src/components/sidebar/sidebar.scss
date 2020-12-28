@@ -9,6 +9,7 @@
   transform: translateX(100%);
   transition: transform 300ms ease-in;
   border-left: 3px solid #01cacf;
+  max-width: 400px;
   svg {
     position: absolute;
     top: 5%;
