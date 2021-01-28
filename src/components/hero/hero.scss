@@ -26,7 +26,8 @@
         font-weight: 400;
         font-size: 1.125rem;
         margin-bottom: 2rem;
-        text-shadow: 1px 1px #444;
+        // text-shadow: 1px 1px #444;
+        opacity: .8;
       }
     }
     .side-b {
@@ -102,7 +103,7 @@
   }
 }
 
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 475px){
   .hero {
     .container {
       .side-a {
