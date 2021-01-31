@@ -9,7 +9,7 @@ const Landing = () => {
         <div className="text">
           <h1>Reduce the size of large files with Data Bucket's online compressor</h1>
           <h2>No downloads are necessary! Manage your files in the browser, and quickly share them.</h2>
-          <Button buttonStyle="btn-gradient" link='./pricing'>Try Data Bucket</Button>
+          <Button buttonStyle="btn-gradient" link='/pricing'>Try Data Bucket</Button>
         </div>
       </div>
     </div>

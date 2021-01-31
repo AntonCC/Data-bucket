@@ -4,21 +4,6 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { ReactComponent as Plus } from '../../img/icons/plus-solid.svg'
 import { ReactComponent as Minus } from '../../img/icons/minus-solid.svg'
 
-const variants = {
-  open: {
-    height: '100%',
-    transition: {
-      duration: .15
-    } 
-  },
-  closed: {
-    height: 0,
-    transition: {
-      duration: .15
-    }
-  }
-}
-
 const Accordion = ({ title, body }) => {
   const [active, setActive] = useState(false)
 

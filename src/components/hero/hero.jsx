@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import './hero.scss'
 import { motion } from 'framer-motion'
+import debounce from '../../helperFuncs/debounce.js'
 import Button from '../../components/button/button'
 
 const Hero = ({ title, subtitle, buttonText, image, video, extend, link }) => {
   const [windowHeight, setWindowHeight] = useState(window.innerHeight)
 
   useEffect(() => {
-    window.addEventListener('resize', handleHeightChange)
+    window.addEventListener('resize', debouncedHandleHeightChange)
 
     return () => {
-      window.removeEventListener('resize', handleHeightChange)
+      window.removeEventListener('resize', debouncedHandleHeightChange)
     }
   }, [])
 
@@ -18,8 +19,10 @@ const Hero = ({ title, subtitle, buttonText, image, video, extend, link }) => {
     setWindowHeight(window.innerHeight)
   }
 
+  const debouncedHandleHeightChange = debounce(handleHeightChange, 75)
+
   return (
-    <div className={`hero ${extend ? 'extend' : ''}`} style={{ height: `calc(${windowHeight})px` }}>
+    <div className={`hero ${extend ? 'extend' : ''}`} style={{ height: `calc(${windowHeight}px - 50px)` }}>
       <div className="container">
         <motion.div className="side-a" 
           initial={ { opacity: 0, y: -25} } 
