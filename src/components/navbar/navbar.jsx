@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { SignContext } from '../../contexts/signContext'
 import './navbar.scss'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import Button from '../button/button'
 import { ReactComponent as Hamburger} from '../../img/icons/bars-solid.svg'
 
@@ -26,9 +26,9 @@ const Navbar = ({ handleSidebar }) => {
           </Link>
         </div>
         <ul className="nav-list">
-          <li><Link to='/explore'>Explore</Link></li>
-          <li><Link to='/about'>About</Link></li>
-          <li><Link to='/pricing'>Pricing</Link></li>
+          <li><NavLink tag={NavLink} activeClassname="active" to='/explore'>Explore</NavLink></li>
+          <li><NavLink tag={NavLink} activeClassname="active" to='/about'>About</NavLink></li>
+          <li><NavLink tag={NavLink} activeClassname="active" to='/pricing'>Pricing</NavLink></li>
         </ul>
         <div className="cta-group">
           <Link to="/signin" onClick={signIn}>
